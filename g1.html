@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gym Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .video-background {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .video-background video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+    }
+
+    .welcome-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+
+    .welcome-text h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
+
+    .welcome-text p {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #20db0f;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 25px;
+      border-radius: 4px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #990000;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-background">
+    <video autoplay loop muted>
+      <source src="rrvideo.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="welcome-text">
+    <h1>RR310</h1>
+    <p>Bike riding, where passion meets Precision...</p>
+    <a href="#" class="cta-button">Explore Now</a>
+  </div>
+</body>
+</html>
